@@ -1,7 +1,8 @@
-const page = () => {
+const SearchPage = async ({searchParams}:{searchParams: {query: string}}) => {
+  const { query } = await searchParams;
   return (
-    <div>page</div>
+    <div>Search result for {query} </div>
   )
 }
 
-export default page
+export default SearchPage
