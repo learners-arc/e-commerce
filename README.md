@@ -1,10 +1,5 @@
 # Remaining Work:
 
-- Building 
-- Building Product Page
-- Building Category Selector
-- Building Category Page
-- Building Search Page
 - Implementing Zustand for state management
 - Implementing Complete Add to Basket Functionality
 - Implementing Server Actions
