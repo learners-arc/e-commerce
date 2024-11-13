@@ -6,7 +6,6 @@ import { getAllProducts } from "@/sanity/lib/products/getAllProducts";
 export default async function Home() {
   const products = await getAllProducts();
   const categories = await getAllCategories();
-  console.log(categories)
   return (
     <div>
       <SaleBanner />

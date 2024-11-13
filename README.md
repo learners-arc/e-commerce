@@ -1,6 +1,5 @@
 # Remaining Work:
 
-- Implementing Zustand for state management
 - Implementing Complete Add to Basket Functionality
 - Implementing Server Actions
 - Implementing Stripe for payment processing
