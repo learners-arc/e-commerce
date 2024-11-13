@@ -1,6 +1,6 @@
 # Remaining Work:
 
-- Building Search Page
+- Building 
 - Building Product Page
 - Building Category Selector
 - Building Category Page
