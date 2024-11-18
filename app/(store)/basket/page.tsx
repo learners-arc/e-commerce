@@ -33,7 +33,30 @@ const BasketPage = () => {
         </div>
     }
 
-    const handleCheckout = async () => {
+    // const handleCheckout = async () => {
+    //     if(!isSignedIn) return;
+    //     setIsLoading(true);
+    //     try {
+    //         const metadata: Metadata = {
+    //             orderNumber:crypto.randomUUID(),
+    //             customerName: user?.fullName ?? "Unknown",
+    //             customerEmail: user?.emailAddresses[0].emailAddress ?? "Unknown",
+    //             clerkUserId: user!.id, 
+    //         };
+
+    //         const checkoutUrl = await createCheckoutSession(groupedItems, metadata);
+
+    //         if(checkoutUrl) {
+    //             window.location.href = checkoutUrl;
+    //         }
+    //     } catch (error) {
+    //         console.error("Error creating checkout session: ",error);   
+    //     } finally {
+    //         setIsLoading(false);
+    //     }
+    // }
+
+        const handleCheckout = async () => {
         if(!isSignedIn) return;
         setIsLoading(true);
         try {
@@ -43,14 +66,14 @@ const BasketPage = () => {
                 customerEmail: user?.emailAddresses[0].emailAddress ?? "Unknown",
                 clerkUserId: user!.id, 
             };
-
+    
             const checkoutUrl = await createCheckoutSession(groupedItems, metadata);
-
+    
             if(checkoutUrl) {
                 window.location.href = checkoutUrl;
             }
         } catch (error) {
-            console.error("Error creating checkout session: ",error);   
+            console.error("Error creating checkout session: ", error);   
         } finally {
             setIsLoading(false);
         }
