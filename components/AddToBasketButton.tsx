@@ -29,7 +29,7 @@ const AddToBasketButton = ({product, disabled}: AddToBasketButtonProps) => {
             <span className={`text-xl font-bold ${itemCount === 0 ? "text-gray-400" : "text-gray-600"}`}>-</span>
             </button>
         <span className="w-8 text-center font-semibold">{itemCount}</span>
-        <button onClick={()=> addItem(product._id)}
+        <button onClick={()=> addItem(product)}
             className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors duration-200 ${disabled ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"}`}
             disabled = {disabled}>
             <span className={`text-xl font-bold text-white`}>+</span>
