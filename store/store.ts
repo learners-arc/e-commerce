@@ -18,22 +18,22 @@ interface BasketState {
   getGroupedItems: () => BasketItem[];
 }
 
-const useBasketStore = create<BasketState>()(
+export const useBasketStore = create<BasketState>()(
   persist(
     (set, get) => ({
       items: [],
       addItem: (product) =>
         set((state) => {
           const existingItem = state.items.find(
-            (item) => item.product._id === product._id
+            item => item.product._id === product._id
           );
           if (existingItem) {
             return {
-              items: state.items.map((item) =>
+              items: state.items.map(item =>
                 item.product._id === product._id
                   ? { ...item, quantity: item.quantity + 1 }
                   : item
-              ),
+              )
             };
           } else {
             return { items: [...state.items, { product, quantity: 1 }] };
@@ -60,7 +60,7 @@ const useBasketStore = create<BasketState>()(
         );
       },
       getItemCount: (productId) => {
-        const item = get().items.find((item) => item.product._id === productId);
+        const item = get().items.find(item => item.product._id === productId);
         return item ? item.quantity : 0;
       },
       getGroupedItems: () => get().items,
