@@ -7,7 +7,7 @@ import BidForm from "@/components/BidForm";
 import BidsList from "@/components/BidsList";
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const { slug } = params;
+  const { slug } = await params;
   const product = await getBidProductBySlug(slug);
 
   if (!product) {

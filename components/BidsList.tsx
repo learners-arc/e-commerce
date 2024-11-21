@@ -19,14 +19,13 @@ const BidsList = ({ productId }) => {
 
     fetchBids();
   }, [productId]);
-
   return (
     <div>
       {bids.length > 0 ? (
         bids.map((bid) => (
           <div key={bid.id} className="flex items-center mb-4">
             <Image
-              src={bid.customerProfilePic}
+              src={bid.imageUrl}
               alt={bid.customerName}
               width={50}
               height={50}
@@ -34,6 +33,7 @@ const BidsList = ({ productId }) => {
             />
             <div>
               <div className="font-bold">{bid.customerName}</div>
+              <div>E-mail: {bid.customerEmail}</div>
               <div>Bid Amount: ₹{bid.biddingAmount}</div>
               <div>Bid Time: {new Date(bid.timestamp).toLocaleString()}</div>
             </div>
