@@ -1,39 +1,36 @@
-[
-  {
-    "_id": "9e4fbc73-fb21-41df-becf-c2f2639189da",
-    "productName": "Limited Edition Anime T-shirt",
-    "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
-    "customerEmail": "sh4k1l.01@gmail.com",
-    "customerName": "SHAKIL AHMAD",
-    "biddingAmount": 55000,
-    "timestamp": "2024-11-20T21:05:55.524Z"
-  },
-  {
-    "_id": "ac8cab2a-0009-4957-96cf-650feb8bde23",
-    "productName": "Antic Painting",
-    "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
-    "customerEmail": "sh4k1l.01@gmail.com",
-    "customerName": "SHAKIL AHMAD",
-    "biddingAmount": 4000,
-    "timestamp": "2024-11-20T21:07:05.778Z"
-  },
-  {
-    "_id": "ac8cab2a-0009-4957-96cf-650feb8bde23",
-    "productName": "Antic Painting",
-    "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
-    "customerEmail": "sh4k1l.01@gmail.com",
-    "customerName": "SHAKIL AHMAD",
-    "biddingAmount": 700,
-    "timestamp": "2024-11-20T21:09:31.005Z"
-  },
-  {
-    "_id": "ac8cab2a-0009-4957-96cf-650feb8bde23",
-    "productName": "Antic Painting",
-    "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
-    "customerEmail": "sh4k1l.01@gmail.com",
-    "customerName": "SHAKIL",
-    "biddingAmount": 5000,
-    "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yb2RSNkw1dGF2N3Jtb09UdmpDaWVEOVZhdUIifQ",
-    "timestamp": "2024-11-21T06:26:53.924Z"
-  }
-]
+{
+  "9e4fbc73-fb21-41df-becf-c2f2639189da": [
+    {
+      "id": "9e4fbc73-fb21-41df-becf-c2f2639189da",
+      "productName": "Limited Edition Anime T-shirt",
+      "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
+      "customerEmail": "sh4k1l.01@gmail.com",
+      "customerName": "SHAKIL",
+      "biddingAmount": 5000,
+      "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yb2RSNkw1dGF2N3Jtb09UdmpDaWVEOVZhdUIifQ",
+      "timestamp": "2024-11-21T07:57:09.351Z"
+    },
+    {
+      "id": "9e4fbc73-fb21-41df-becf-c2f2639189da",
+      "productName": "Limited Edition Anime T-shirt",
+      "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
+      "customerEmail": "sh4k1l.01@gmail.com",
+      "customerName": "SHAKIL",
+      "biddingAmount": 8000,
+      "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yb2RSNkw1dGF2N3Jtb09UdmpDaWVEOVZhdUIifQ",
+      "timestamp": "2024-11-21T07:57:25.503Z"
+    }
+  ],
+  "99c3f7c3-d567-4941-ad8a-3a11e300301a": [
+    {
+      "id": "99c3f7c3-d567-4941-ad8a-3a11e300301a",
+      "productName": "Richard Mille 11-03 ",
+      "clerkUserId": "user_2odR6K6GOSn7ag2POcji89MWuHM",
+      "customerEmail": "sh4k1l.01@gmail.com",
+      "customerName": "SHAKIL",
+      "biddingAmount": 2222222222222222300,
+      "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yb2RSNkw1dGF2N3Jtb09UdmpDaWVEOVZhdUIifQ",
+      "timestamp": "2024-11-21T08:10:54.774Z"
+    }
+  ]
+}

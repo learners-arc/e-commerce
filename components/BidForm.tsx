@@ -80,7 +80,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useUser, ClerkLoaded } from "@clerk/nextjs";
-import Image from "next/image";
 
 const BidForm = ({ product }) => {
   const [bidAmount, setBidAmount] = useState<number>(0);
