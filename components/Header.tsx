@@ -8,7 +8,7 @@ import {
   useUser,
 } from "@clerk/nextjs";
 import Link from "next/link";
-import Form from "next/Form";
+import Form from "next/form";
 import { PackageIcon, TrolleyIcon } from "@sanity/icons";
 import { useBasketStore } from "@/store/store";
 
