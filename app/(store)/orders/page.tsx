@@ -1,62 +1,75 @@
-
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
-const sampleOrderData = [
-  {
-    orderNumber: "123456",
-    customerName: "John Doe",
-    customerEmail: "john.doe@example.com",
-    items: [
-      {
-        id: "1",
-        name: "Chirpy Wall Light",
-        quantity: 2,
-        price: 100,
-        imageUrl: "",
-        status: "Delivered"
-      },
-      {
-        id: "2",
-        name: "Product 2",
-        quantity: 1,
-        price: 200,
-        imageUrl: "",
-        status: "Shipping"
-      }
-    ],
-    totalAmount: 400,
-    orderDate: "2023-11-21T07:57:09.351Z"
-  },
-  {
-    orderNumber: "789012",
-    customerName: "Jane Smith",
-    customerEmail: "jane.smith@example.com",
-    items: [
-      {
-        id: "3",
-        name: "Product 3",
-        quantity: 1,
-        price: 300,
-        imageUrl: "",
-        status: "Cancelled"
-      },
-      {
-        id: "4",
-        name: "Product 4",
-        quantity: 3,
-        price: 150,
-        imageUrl: "",
-        status: "Delivered"
-      }
-    ],
-    totalAmount: 750,
-    orderDate: "2023-11-20T10:30:00.000Z"
-  }
-];
+import { goldenBird, airdrops } from "@/data";
+import { useUser } from "@clerk/nextjs";
+import { useEffect, useState } from "react";
 
 const OrderPage = () => {
+  const [mail, setMail] = useState('');
+  const [username, setUsername] = useState('');
+  const { user } = useUser();
+
+    useEffect(() => {
+      if (user) {
+        setUsername(user?.fullName);
+        setMail(user.primaryEmailAddress?.emailAddress);
+      }
+    }, [user]);
+
+  const sampleOrderData = [
+    {
+      orderNumber: "6046b7b7-b478-45ca-9972-02dce47025db",
+      customerName: username,
+      customerEmail: mail,
+      items: [
+        {
+          id: "1",
+          name: "Chirpy Wall Light",
+          quantity: 1,
+          price: '4,999',
+          imageUrl: goldenBird,
+          status: "Delivered"
+        },
+        {
+          id: "2",
+          name: "boAt Airdopes 311 Pro",
+          quantity: 1,
+          price: '1,099',
+          imageUrl: airdrops,
+          status: "Shipping"
+        }
+      ],
+      totalAmount: '6,098',
+      orderDate: "2024-11-21T07:57:09.351Z"
+    },
+    {
+      orderNumber: "12f8d353-b92f-43b5-a355-ec3fcce03f92",
+      customerName: username,
+      customerEmail: mail,
+      items: [
+        {
+          id: "3",
+          name: "Zebronics ZEB-SP110",
+          quantity: 1,
+          price: 300,
+          imageUrl: "https://m.media-amazon.com/images/I/61dhsFpHHVL._SX522_.jpg",
+          status: "Cancelled"
+        },
+        {
+          id: "4",
+          name: "Jam & Honey Penguin",
+          quantity: 3,
+          price: 150,
+          imageUrl: "https://m.media-amazon.com/images/I/61A2ddWFQxL._SX522_.jpg",
+          status: "Delivered"
+        }
+      ],
+      totalAmount: 750,
+      orderDate: "2024-11-20T10:30:00.000Z"
+    }
+  ];
   return (
     <div className="container mx-auto px-4 py-8 bg-white">
       <h1 className="text-3xl font-bold mb-8 text-blue-600">Order History</h1>
